@@ -1,44 +1,126 @@
+/* ===== Base ===== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #fdfdfd;
-    color: #333;
+    color: #fff; /* Changed from #333 to white */
+    background: url('images/ImageBackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
 }
 
+/* Overlay to darken image slightly for text readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: -1;
+}
+
+/* ===== Header ===== */
 header {
-    background-color: #f7d1e2;
-    padding: 1em;
+    background: linear-gradient(90deg, #d6a15e 0%, #e1b573 50%, #f0c88b 100%);
+    color: #fff; /* ensure header text stays white */
+    padding: 1.5em 0;
     text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* ===== Navigation ===== */
+nav {
+    margin-top: 10px;
 }
 
 nav a {
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: #fff; /* white links */
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: #fffbea; /* slightly softer on hover */
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ===== Sections ===== */
 section {
-    padding: 2em;
+    padding: 2.5em;
     max-width: 900px;
     margin: auto;
+    text-align: center;
 }
 
+h2 {
+    color: #ffd69b; /* lighter accent for headings */
+}
+
+p, li {
+    color: #fff; /* main text white */
+}
+
+/* ul Menu */
+ul {
+    list-style: none; /* hide ::marker */
+    padding-left: 0;
+}
+
+/* ===== Gallery ===== */
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 1.5em;
 }
 
 .gallery img {
     width: 30%;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.901);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* ===== Footer ===== */
 footer {
-    background: #f7d1e2;
+    background: linear-gradient(90deg, #d6a15e, #e1b573);
     text-align: center;
-    padding: 1em;
+    padding: 1.2em;
+    color: #fff;
     font-size: 0.9em;
 }
