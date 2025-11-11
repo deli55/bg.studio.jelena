@@ -1,4 +1,7 @@
 /* ===== Base ===== */
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
@@ -23,7 +26,7 @@ body::before {
 
 /* ===== Header ===== */
 header {
-    background: linear-gradient(90deg, #ac834d 0%, #caa368 50%, #dfb980 100%);
+    background: linear-gradient(90deg, #7c5e38 0%, #a98958 50%, #ba9a6b 100%);
     color: #fff; /* ensure header text stays white */
     padding: 1.5em 0;
     text-align: center;
@@ -83,6 +86,7 @@ section {
 
 h2 {
     color: #ffd69b; /* lighter accent for headings */
+    font-size: 32px;
 }
 
 p, li {
@@ -94,6 +98,59 @@ ul {
     list-style: none; /* hide ::marker */
     padding-left: 0;
 }
+
+/* Target texts to control fonts */
+#about p {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+#contact p {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+/* Services table */
+.services-table {
+    width: 100%;
+    max-width: 600px; /* table width */
+    margin: 1em auto;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.5); /* slightly darker than page overlay */
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.services-table th,
+.services-table td {
+    padding: 12px 20px;
+    text-align: left;
+}
+
+.services-table th {
+    background: rgba(0, 0, 0, 0.6); /* slightly darker for header */
+    font-size: 1.4em;
+}
+
+.services-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05); /* subtle stripe for readability */
+}
+
+.services-table tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.services-table td {
+    font-size: 1.2em;
+}
+
 
 /* ===== Gallery ===== */
 .gallery {
