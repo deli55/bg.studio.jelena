@@ -17,13 +17,13 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.527);
     z-index: -1;
 }
 
 /* ===== Header ===== */
 header {
-    background: linear-gradient(90deg, #d6a15e 0%, #e1b573 50%, #f0c88b 100%);
+    background: linear-gradient(90deg, #ac834d 0%, #caa368 50%, #dfb980 100%);
     color: #fff; /* ensure header text stays white */
     padding: 1.5em 0;
     text-align: center;
@@ -118,9 +118,9 @@ ul {
 
 /* ===== Footer ===== */
 footer {
-    background: linear-gradient(90deg, #d6a15e, #e1b573);
+    background: linear-gradient(90deg, #6f5532, #94794d);
     text-align: center;
-    padding: 1.2em;
+    padding: 0.2em;
     color: #fff;
     font-size: 0.9em;
 }
