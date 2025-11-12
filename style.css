@@ -2,6 +2,11 @@
 html {
     scroll-behavior: smooth;
 }
+@media (max-width: 600px) {
+    td {
+        font-size: 0.9em;
+    }
+}
 body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
@@ -179,7 +184,7 @@ ul {
 }
 
 .gallery img {
-    width: 30%;
+    width: 48%;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(255, 255, 255, 0.901);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -189,6 +194,27 @@ ul {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
+
+/* Contact */
+.social-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 6px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s;
+}
+
+.insta-link {
+    color: #e8c2ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.insta-link:hover {
+    color: #ffffff;
+}
+
 
 /* ===== Footer ===== */
 footer {
