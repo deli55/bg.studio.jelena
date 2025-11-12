@@ -123,13 +123,6 @@ ul {
     margin-bottom: 0.5em;
 }
 
-.content-wrapper {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-}
-
-
 /* Services table */
 .services-table {
     width: 100%;
@@ -176,6 +169,18 @@ ul {
     padding-right: 20px;
 }
 
+@media (max-width: 600px) {
+    .services-table td,
+    .services-table th {
+        font-size: 1em;         /* smaller font */
+        padding: 8px 10px;      /* reduce padding */
+    }
+
+    .services-table td:last-child {
+        text-align: right;      /* keep price aligned */
+        white-space: nowrap;    /* prevents wrapping */
+    }
+}
 
 /* ===== Gallery ===== */
 .gallery {
