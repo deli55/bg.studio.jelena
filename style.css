@@ -213,13 +213,13 @@ ul {
     transition: transform 0.2s;
 }
 
-.insta-link {
+.color-link {
     color: #e8c2ff;
     text-decoration: none;
     font-weight: 500;
 }
 
-.insta-link:hover {
+.color-link:hover {
     color: #ffffff;
 }
 
